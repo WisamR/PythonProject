@@ -35,17 +35,27 @@ Then we have used subroutines to communicate and pass data to the database from 
 In other to create and connect different command of the database line, the following subprograms where defined. 
 Define crud functions were used to create and connect different command of the database line.
 
+####
+
 def Database(): 
 This subprogram was set as a function to open the database connection.  In here the table is created if it does exist or it will connect if the table already exists. This is the most important function while working with databases in Sqlite as it opens the database connection for crud operations. 
 
+####
+
 def Create(): 
 The def create subprogram is a function used for entering new data to the table created in the database. In our implementation we have used if conditions to validate if the data fields are not empty and if it is all validated then it will call the database to create a new row and add it the table with respective value. If the field are empty we have configured a text widget that will show the datafield in the entry boxes or widgets are empty. After this function is executed an auto-incremented unique id will be generated so we can later distinguish each data separately.
+
+####
 
 Def update ():
  This subprogram updates value if they are empty and also update them. 
 This function helps to update the existing database if some entries have been wrong and needs to be re-entered. We have implemented such that the ID from the database needs to be given and then any entry widget data will be updated to the row with respective ID number. Just for validating that the user is not populating data with empty values we have used if condition to validate and then text widet to give the message if the entry is added or not.
 
+####
+
 def Read(): 
 The purpose of this function is to read all data that has been inputted. It will list all the datas in the database table and pass it to the tree-view widget from tkinter and then display all the data in the table with respective rows.
+
+####
 
 def Exit(): The exit function, just has the name implies ends the program, when the user inputs a yes. 
