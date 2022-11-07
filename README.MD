@@ -30,7 +30,7 @@ Then we have used subroutines to communicate and pass data to the database from 
 
 ####
 
-##### ** 3.1	Detailed description of subprograms **
+##### **3.1	Detailed description of subprograms**
 
 In other to create and connect different command of the database line, the following subprograms where defined. 
 Define crud functions were used to create and connect different command of the database line.
